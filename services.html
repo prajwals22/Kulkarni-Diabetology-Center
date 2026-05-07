@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Kulkarni Diabetology Centre</title>
+  <meta name="description" content="Explore the full range of advanced diabetes and endocrine services at Kulkarni Diabetology Centre — insulin therapy, CGM, thyroid care, lifestyle medicine and more." />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="icon" href="logo/Diabetes2.png" type="image/png" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="logo/Diabetes.png" alt="Kulkarni Diabetes Center Logo" />
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"    onclick="closeMobile()">Home</a>
+    <a href="about.html"    onclick="closeMobile()">About Us</a>
+    <a href="services.html" onclick="closeMobile()">Services</a>
+    <a href="contact.html" class="nav-cta" onclick="closeMobile()">Contact Us</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg-cells" aria-hidden="true">
+      <div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Services</span>
+      </div>
+      <h1 class="page-hero-title">
+        Advanced Treatments,<br>
+        <span class="gradient-text">Tailored For You</span>
+      </h1>
+      <p class="page-hero-subtitle">
+        At Kulkarni Diabetology Centre, we combine evidence-based protocols with deep clinical expertise to deliver transformative metabolic health outcomes — safely, precisely, and personally.
+      </p>
+      <div class="page-hero-stats">
+        <div class="phs-item">
+          <div class="phs-number">ADA</div>
+          <div class="phs-label">Guidelines Based</div>
+        </div>
+        <div class="phs-item">
+          <div class="phs-number">13+</div>
+          <div class="phs-label">Specialised Services</div>
+        </div>
+        <div class="phs-item">
+          <div class="phs-number">4.9★</div>
+          <div class="phs-label">Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Services marquee">
+    <div class="ticker-inner">
+      <div class="ticker-item"><span class="dot"></span> Advanced Treatment for Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Type 1 Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Type 2 Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Gestational Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Prediabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Treatment for Obesity</div>
+      <div class="ticker-item"><span class="dot"></span> Dietary Advice</div>
+      <div class="ticker-item"><span class="dot"></span> CGMS Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Insulin Pump</div>
+      <div class="ticker-item"><span class="dot"></span> ABPM</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Neuropathy Screening</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Nephropathy Screening</div>
+      <div class="ticker-item"><span class="dot"></span> Thyroid Disorders</div>
+      <div class="ticker-item"><span class="dot"></span> Advanced Treatment for Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Type 1 Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Type 2 Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Gestational Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Prediabetes</div>
+      <div class="ticker-item"><span class="dot"></span> Treatment for Obesity</div>
+      <div class="ticker-item"><span class="dot"></span> Dietary Advice</div>
+      <div class="ticker-item"><span class="dot"></span> CGMS Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Insulin Pump</div>
+      <div class="ticker-item"><span class="dot"></span> ABPM</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Neuropathy Screening</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Nephropathy Screening</div>
+      <div class="ticker-item"><span class="dot"></span> Thyroid Disorders</div>
+    </div>
+  </div>
+
+  <!-- ALL SERVICES QUICK REFERENCE -->
+  <section class="all-services-section">
+    <div class="all-services-inner">
+      <div class="all-services-header reveal">
+        <div class="section-tag">Complete Services List</div>
+        <h2 class="section-title">All Available Services at a Glance</h2>
+        <p class="section-subtitle">Every service available at Kulkarni Diabetology Centre — as displayed at our clinic.</p>
+      </div>
+      <div class="all-services-grid">
+        <div class="as-card reveal">
+          <span class="as-icon">📊</span>
+          <span class="as-name">Advanced Treatment for Diabetes</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">💊</span>
+          <span class="as-name">Type 2 Diabetes</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">👦</span>
+          <span class="as-name">Type 1 Diabetes (Childhood-Onset)</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🤰</span>
+          <span class="as-name">Gestational Diabetes</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">⚡</span>
+          <span class="as-name">Prediabetes</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">⚖️</span>
+          <span class="as-name">Treatment for Obesity</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🥗</span>
+          <span class="as-name">Dietary Advice</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">📡</span>
+          <span class="as-name">CGMS — Continuous Glucose Monitoring System</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">💉</span>
+          <span class="as-name">Insulin Pump</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🫀</span>
+          <span class="as-name">ABPM — Ambulatory Blood Pressure Monitoring</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🦶</span>
+          <span class="as-name">Diabetic Neuropathy Screening</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🫘</span>
+          <span class="as-name">Diabetic Nephropathy Screening</span>
+        </div>
+        <div class="as-card reveal">
+          <span class="as-icon">🦋</span>
+          <span class="as-name">Thyroid Disorders</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES NAV TABS -->
+  <section class="services-nav-section" id="services-nav">
+    <div class="services-tab-wrap">
+      <button class="stab active" data-cat="diabetes">
+        <span class="stab-icon">🩸</span> Diabetes Management
+      </button>
+      <button class="stab" data-cat="monitoring">
+        <span class="stab-icon">📡</span> Advanced Monitoring
+      </button>
+      <button class="stab" data-cat="complications">
+        <span class="stab-icon">🫀</span> Complication Care
+      </button>
+      <button class="stab" data-cat="lifestyle">
+        <span class="stab-icon">🌱</span> Lifestyle &amp; Support
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== DIABETES MANAGEMENT ===== -->
+  <section class="service-section active" id="cat-diabetes">
+    <div class="ss-header reveal">
+      <div class="section-tag">Comprehensive Diabetes Care</div>
+      <h2 class="section-title">End-to-End Blood Sugar Management</h2>
+      <p class="section-subtitle">Evidence-based, personalised management for every type of diabetes — from initial diagnosis through long-term glycaemic optimisation using CGM insights, newer medications, and individualised lifestyle plans.</p>
+    </div>
+    <div class="services-list">
+
+      <!-- 01 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">📊</span></div>
+            <div class="svc-number">01</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Advanced Treatment for Diabetes</div>
+            <h3 class="svc-title">Comprehensive Diabetes Assessment &amp; Management</h3>
+            <p class="svc-desc">End-to-end management for all forms of diabetes using evidence-based protocols. We conduct a thorough metabolic evaluation — including <strong>HbA1c, fasting glucose, insulin levels, lipid profile, kidney function, and urine microalbumin</strong> — to paint a complete picture of your metabolic health. CGM insights, newer agent medications, and individualised lifestyle plans are integrated into a single personalised treatment roadmap designed specifically for you.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>All Forms of Diabetes</span>
+                <span>Newly Diagnosed</span>
+                <span>Annual Diabetes Review</span>
+                <span>Poorly Controlled Diabetes</span>
+                <span>Medication Optimisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">💊</span></div>
+            <div class="svc-number">02</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Type 2 Diabetes</div>
+            <h3 class="svc-title">Type 2 Diabetes — Diagnosis, Optimisation &amp; Prevention</h3>
+            <p class="svc-desc">Our Type 2 diabetes programme covers <strong>diagnosis, risk stratification, medication optimisation, weight management, and sustainable diet-activity planning</strong> with regular follow-up and complication screening built in. We use the latest oral and injectable agents — including SGLT-2 inhibitors and GLP-1 receptor agonists — to achieve tight glycaemic control while also protecting your heart and kidneys. Every plan is adapted to your lifestyle, comorbidities, and personal goals.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Type 2 Diabetes</span>
+                <span>Cardiovascular Risk</span>
+                <span>Diabetic Kidney Disease</span>
+                <span>Obesity with Diabetes</span>
+                <span>Medication Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">👦</span></div>
+            <div class="svc-number">03</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Type 1 Diabetes (Childhood-Onset)</div>
+            <h3 class="svc-title">Child &amp; Family-Centred Type 1 Diabetes Care</h3>
+            <p class="svc-desc">Type 1 diabetes in children demands a holistic, family-centred approach. We provide <strong>insulin planning, education on carbohydrate counting, hypoglycaemia prevention, and school-readiness plans</strong> tailored to the child's age, activity level, and daily routine. Device support including <strong>CGM and insulin pump</strong> setup and training is offered, along with ongoing counselling for parents and caregivers to ensure confident day-to-day management at home and school.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Type 1 Diabetes</span>
+                <span>Children &amp; Adolescents</span>
+                <span>Insulin Pump Users</span>
+                <span>Frequent Hypoglycaemia</span>
+                <span>School-Age Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🤰</span></div>
+            <div class="svc-number">04</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Pregnancy &amp; Diabetes</div>
+            <h3 class="svc-title">Gestational Diabetes — Trimester-Specific Care</h3>
+            <p class="svc-desc">Gestational diabetes demands the highest level of precision. We provide <strong>trimester-specific care in close collaboration with obstetricians</strong>, setting safe glucose targets, delivering structured dietary counselling, and ensuring consistent glucose monitoring throughout pregnancy. Following delivery, a <strong>postpartum reassessment</strong> is conducted to evaluate long-term risk and prevent future diabetes — protecting both mother and baby at every stage.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Gestational Diabetes</span>
+                <span>Pre-existing Diabetes in Pregnancy</span>
+                <span>High-Risk Pregnancy</span>
+                <span>Postpartum Diabetes Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">⚡</span></div>
+            <div class="svc-number">05</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Prediabetes</div>
+            <h3 class="svc-title">Prediabetes — Early Intervention &amp; Reversal</h3>
+            <p class="svc-desc">Prediabetes is a critical window of opportunity. Our early intervention programme focuses on <strong>weight control, structured dietary change, increased physical activity, sleep optimisation, and stress management</strong> — all proven to delay or prevent the onset of Type 2 diabetes. We track progress with periodic glucose and metabolic assessments, adjusting the programme as needed to keep your numbers moving in the right direction.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Prediabetes</span>
+                <span>Impaired Fasting Glucose</span>
+                <span>Insulin Resistance</span>
+                <span>Family History of Diabetes</span>
+                <span>Weight Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">⚖️</span></div>
+            <div class="svc-number">06</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Weight &amp; Metabolic Health</div>
+            <h3 class="svc-title">Treatment for Obesity &amp; Medical Weight Management</h3>
+            <p class="svc-desc">Excess weight is a complex metabolic disease, not simply a lifestyle issue. We provide a structured medical weight management programme tailored to your profile — combining <strong>nutrition planning, activity prescriptions, behaviour change support, and when appropriate, anti-obesity medications</strong> including GLP-1 agonists. Metabolic markers including blood sugar, blood pressure, lipids, and liver enzymes are monitored closely throughout your weight loss journey.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Obesity with Diabetes</span>
+                <span>Metabolic Syndrome</span>
+                <span>Fatty Liver (NAFLD)</span>
+                <span>Insulin Resistance</span>
+                <span>Pre-Diabetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ADVANCED MONITORING ===== -->
+  <section class="service-section" id="cat-monitoring">
+    <div class="ss-header reveal">
+      <div class="section-tag">Advanced Monitoring &amp; Technology</div>
+      <h2 class="section-title">Precision Technology for Better Control</h2>
+      <p class="section-subtitle">State-of-the-art glucose monitoring, insulin delivery, and cardiovascular assessment tools — giving you and your doctor a complete, real-time picture of your metabolic health.</p>
+    </div>
+    <div class="services-list">
+
+      <!-- 01 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">📡</span></div>
+            <div class="svc-number">01</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Real-Time Glucose Technology</div>
+            <h3 class="svc-title">CGMS — Continuous Glucose Monitoring System</h3>
+            <p class="svc-desc">CGM has transformed diabetes management. A small sensor worn on the body measures glucose every few minutes, providing complete glucose trend data directly to your phone. We offer both <strong>short-term professional CGM</strong> (used in-clinic for diagnostic insights) and <strong>long-term personal CGM</strong> setups. Services include device selection, full initiation training, <strong>time-in-range optimisation</strong>, and regular data interpretation to make personalised adjustments to your meals, medications, and activity levels.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Type 1 Diabetes</span>
+                <span>Type 2 on Insulin</span>
+                <span>Frequent Hypoglycaemia</span>
+                <span>Poor HbA1c Control</span>
+                <span>Pregnant Diabetics</span>
+                <span>Insulin Pump Users</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">💉</span></div>
+            <div class="svc-number">02</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Precision Insulin Delivery</div>
+            <h3 class="svc-title">Insulin Pump Therapy</h3>
+            <p class="svc-desc">Insulin pumps offer unparalleled flexibility and precision for patients requiring intensive insulin therapy. We provide a full pump service — from <strong>assessment for pump suitability and device selection</strong>, through initiation, initial settings optimisation, and comprehensive patient and family education. Ongoing support includes <strong>regular settings review, basal rate optimisation, and integration with CGM</strong> where appropriate to achieve a fully closed-loop or hybrid closed-loop diabetes management system.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Type 1 Diabetes</span>
+                <span>Brittle Diabetes</span>
+                <span>Frequent Hypoglycaemia</span>
+                <span>Gestational Diabetes</span>
+                <span>Dose Optimisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🫀</span></div>
+            <div class="svc-number">03</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Cardiovascular Monitoring</div>
+            <h3 class="svc-title">ABPM — Ambulatory Blood Pressure Monitoring</h3>
+            <p class="svc-desc">A single clinic blood pressure reading can miss critical patterns. Ambulatory Blood Pressure Monitoring (ABPM) provides a full <strong>24-hour BP profile</strong>, recorded automatically as you go about your normal daily activities and sleep. This allows us to diagnose <strong>masked hypertension, white-coat hypertension, and nocturnal dipping abnormalities</strong> with precision — refining your treatment, reducing cardiovascular risk, and protecting your kidneys from blood pressure-related damage.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Hypertension with Diabetes</span>
+                <span>White-Coat Hypertension</span>
+                <span>Masked Hypertension</span>
+                <span>Cardiovascular Risk Assessment</span>
+                <span>Diabetic Nephropathy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🦋</span></div>
+            <div class="svc-number">04</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Thyroid &amp; Endocrine Care</div>
+            <h3 class="svc-title">Thyroid Disorder Management</h3>
+            <p class="svc-desc">The thyroid gland influences virtually every system in your body, and thyroid dysfunction is closely linked to metabolic and blood sugar disturbances. We provide comprehensive evaluation and management of all thyroid conditions through <strong>TSH, Free T3, Free T4, thyroid antibody testing, and thyroid ultrasound review</strong>. This includes management of <strong>hypothyroidism, hyperthyroidism, thyroid nodules, and pregnancy-related thyroid issues</strong>, with careful medication titration, symptom tracking, and structured long-term follow-up.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Hypothyroidism</span>
+                <span>Hyperthyroidism</span>
+                <span>Hashimoto's Thyroiditis</span>
+                <span>Thyroid Nodules</span>
+                <span>Pregnancy Thyroid Issues</span>
+                <span>Goitre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== COMPLICATION CARE ===== -->
+  <section class="service-section" id="cat-complications">
+    <div class="ss-header reveal">
+      <div class="section-tag">Complication Screening &amp; Prevention</div>
+      <h2 class="section-title">Protect Every Organ, Prevent Every Complication</h2>
+      <p class="section-subtitle">Proactive screening, early intervention, and expert management of all diabetes-related complications — because prevention is always better than cure.</p>
+    </div>
+    <div class="services-list">
+
+      <!-- 01 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🦶</span></div>
+            <div class="svc-number">01</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Diabetic Neuropathy</div>
+            <h3 class="svc-title">Diabetic Neuropathy Screening &amp; Foot Care</h3>
+            <p class="svc-desc">Diabetic neuropathy is one of the most common and serious complications of long-standing diabetes. Our dedicated neuropathy screening programme includes <strong>foot risk assessment, vibration perception testing, monofilament sensory testing, and autonomic symptom review</strong>. Where neuropathy is identified, we provide targeted <strong>pain management strategies, foot-care education, and appropriate footwear advice</strong> to prevent ulcer formation. Early detection and intervention can prevent progression to limb-threatening complications.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Peripheral Neuropathy</span>
+                <span>Burning / Tingling Feet</span>
+                <span>Foot Ulcer Prevention</span>
+                <span>Annual Foot Screening</span>
+                <span>Autonomic Neuropathy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🫘</span></div>
+            <div class="svc-number">02</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Kidney Protection</div>
+            <h3 class="svc-title">Diabetic Nephropathy Screening &amp; Management</h3>
+            <p class="svc-desc">Diabetic kidney disease is the leading cause of chronic kidney failure worldwide — yet it is largely preventable with early detection. We perform structured <strong>urine albumin checks, eGFR monitoring, and serum electrolyte testing</strong> at regular intervals to catch kidney involvement at the earliest possible stage. Our renal-protective treatment protocols — including <strong>ACE inhibitors, ARBs, and SGLT-2 agents as indicated</strong> — combined with blood pressure and glucose targets and renal-protective lifestyle guidance, are designed to slow or halt progression.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Diabetic Nephropathy</span>
+                <span>Microalbuminuria</span>
+                <span>Chronic Kidney Disease</span>
+                <span>Proteinuria</span>
+                <span>Annual Kidney Screening</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">👁️</span></div>
+            <div class="svc-number">03</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Eye &amp; Heart Risk</div>
+            <h3 class="svc-title">Eye &amp; Cardiovascular Risk Coordination</h3>
+            <p class="svc-desc">Diabetes is the most common cause of preventable blindness in working-age adults, and cardiovascular disease remains the leading cause of death in people with diabetes. We coordinate structured <strong>referral pathways for annual retinal examinations</strong> with our ophthalmology partners, alongside comprehensive <strong>lipid management, ECG and echocardiogram referrals when indicated, and vaccination guidance</strong>. Our aim is to protect your vision and your heart simultaneously through proactive, integrated specialist co-management.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Diabetic Retinopathy</span>
+                <span>Macular Oedema</span>
+                <span>Cardiovascular Risk</span>
+                <span>Dyslipidaemia</span>
+                <span>Long-standing Diabetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LIFESTYLE & SUPPORT ===== -->
+  <section class="service-section" id="cat-lifestyle">
+    <div class="ss-header reveal">
+      <div class="section-tag">Nutrition, Lifestyle &amp; Care Support</div>
+      <h2 class="section-title">Treat the Root, Not Just the Number</h2>
+      <p class="section-subtitle">Sustainable health transformation through structured nutrition therapy, lifestyle medicine, patient education, and coordinated specialist care — empowering you to take confident control of your diabetes.</p>
+    </div>
+    <div class="services-list">
+
+      <!-- 01 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🥗</span></div>
+            <div class="svc-number">01</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Nutrition &amp; Dietary Advice</div>
+            <h3 class="svc-title">Personalised Dietary Advice &amp; Medical Nutrition Therapy</h3>
+            <p class="svc-desc">Food is the most powerful medicine in diabetes. We provide <strong>practical, culturally adaptable meal plans</strong> built around your preferences, food traditions, and daily routine. Our dietary counselling covers <strong>carbohydrate counting, the plate method, glycaemic index education, and strategies for festivals, restaurants, and travel</strong>. Individualized plans are crafted for vegetarians, working professionals, and athletes — so your nutrition plan fits your life, not the other way around.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>All Types of Diabetes</span>
+                <span>Weight Management</span>
+                <span>Dyslipidaemia</span>
+                <span>Pre-Diabetes Reversal</span>
+                <span>Gestational Diabetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🏃</span></div>
+            <div class="svc-number">02</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Activity &amp; Habit Coaching</div>
+            <h3 class="svc-title">Exercise Prescription &amp; Lifestyle Habit Coaching</h3>
+            <p class="svc-desc">Physical activity is a cornerstone of diabetes management — but the right prescription matters. We provide <strong>gradual, sustainable exercise plans</strong> that progress at a safe pace, incorporating <strong>strength training basics, daily movement goals, and aerobic activity targets</strong> appropriate for your fitness level and diabetes status. Alongside exercise, we address <strong>sleep hygiene and evidence-based stress reduction techniques</strong> that significantly influence blood sugar regulation and metabolic health.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>All Diabetes Types</span>
+                <span>Sedentary Lifestyle</span>
+                <span>Weight Management</span>
+                <span>Stress-Related Hyperglycaemia</span>
+                <span>Sleep Disorders</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🎓</span></div>
+            <div class="svc-number">03</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Patient Empowerment</div>
+            <h3 class="svc-title">Diabetes Self-Management Education &amp; Counselling</h3>
+            <p class="svc-desc">Knowledge is the most powerful tool in diabetes. Our one-on-one education sessions cover everything you need to take confident control — <strong>insulin injection technique, hypoglycaemia prevention and treatment, sick-day rules, fasting and travel guidance</strong>, and how to interpret your own glucose readings. Families and caregivers are actively included. Educated patients consistently achieve dramatically better outcomes and experience fewer complications.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Newly Diagnosed</span>
+                <span>Insulin Starters</span>
+                <span>CGM Users</span>
+                <span>Families of Diabetics</span>
+                <span>Poor Self-Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">📋</span></div>
+            <div class="svc-number">04</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Personalised Care Plans</div>
+            <h3 class="svc-title">Structured Written Care Plans</h3>
+            <p class="svc-desc">Every patient at Kulkarni Diabetology Centre receives a <strong>clear, written personalised care plan</strong> at the end of each consultation. This covers your current medications with dosing instructions, dietary targets, physical activity goals, blood glucose targets, HbA1c goals, and your scheduled follow-up timeline. Having a written plan ensures you leave every visit with total clarity on what to do next — and provides a reference point for you and your family between appointments.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>All Patients</span>
+                <span>Complex Diabetes</span>
+                <span>Multiple Medications</span>
+                <span>Elderly Patients</span>
+                <span>Caregiver-Supported Patients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="svc-card reveal">
+        <div class="svc-card-inner">
+          <div class="svc-card-left">
+            <div class="svc-icon-wrap"><span class="svc-icon-emoji">🤝</span></div>
+            <div class="svc-number">05</div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-tag">Coordination of Care</div>
+            <h3 class="svc-title">Specialist Co-Management &amp; Referral Network</h3>
+            <p class="svc-desc">Diabetes is a multisystem disease — and managing it well often requires a team. We maintain active collaboration and structured referral pathways with <strong>obstetricians, cardiologists, nephrologists, neurologists, and ophthalmologists</strong>. When specialist input is required, we coordinate your referral, communicate your full clinical history, and ensure seamless continuity of care. You should never feel like you are navigating the system alone — we advocate for you at every step.</p>
+            <div class="svc-best-for">
+              <span class="sbf-label">Best For:</span>
+              <div class="sbf-tags">
+                <span>Diabetic Complications</span>
+                <span>Pregnancy with Diabetes</span>
+                <span>Heart Disease</span>
+                <span>Kidney Disease</span>
+                <span>Eye Disease</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="trust-strip-inner">
+      <div class="ts-item reveal">
+        <div class="ts-icon">🏆</div>
+        <div class="ts-text">
+          <strong>Award Winning</strong>
+          <span>Miraj's top diabetes centre</span>
+        </div>
+      </div>
+      <div class="ts-divider"></div>
+      <div class="ts-item reveal">
+        <div class="ts-icon">✅</div>
+        <div class="ts-text">
+          <strong>ADA / IDF / RSSDI</strong>
+          <span>International guideline adherence</span>
+        </div>
+      </div>
+      <div class="ts-divider"></div>
+      <div class="ts-item reveal">
+        <div class="ts-icon">👨‍⚕️</div>
+        <div class="ts-text">
+          <strong>Board-Certified</strong>
+          <span>Fellowship-trained diabetologist</span>
+        </div>
+      </div>
+      <div class="ts-divider"></div>
+      <div class="ts-item reveal">
+        <div class="ts-icon">❤️</div>
+        <div class="ts-text">
+          <strong>Personalised Care</strong>
+          <span>Custom plans for every patient</span>
+        </div>
+      </div>
+      <div class="ts-divider"></div>
+      <div class="ts-item reveal">
+        <div class="ts-icon">💬</div>
+        <div class="ts-text">
+          <strong>Ongoing Support</strong>
+          <span>With you throughout your journey</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner-text">
+      <h2>Ready to Start Your Diabetes Journey?</h2>
+      <p>Book a consultation with our expert diabetologist today. Every treatment begins with understanding your unique metabolic story.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="contact.html" class="btn-primary">Book Appointment
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+919588479640" class="btn-secondary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        Call Us Now
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER HOSPITAL -->
+  <footer class="footer-hospital">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo/Diabetes.png" alt="Kulkarni Diabetes Center" />
+        <p>Providing compassionate, expert diabetological care to the people of Miraj and beyond. Your metabolic health is our mission.</p>
+        <div class="social-icons" style="margin-top:20px;">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="services.html">Type 1 &amp; Type 2 Diabetes</a></li>
+          <li><a href="services.html">Insulin Pump Therapy</a></li>
+          <li><a href="services.html">CGMS Monitoring</a></li>
+          <li><a href="services.html">Thyroid Care</a></li>
+          <li><a href="services.html">Gestational Diabetes</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="contact-row"><span class="ci">📍</span><span>Near Vantmure corner, Miraj,<br>Chatrapati. Shivaji Nagar, Sangli Miraj Kupwad, Maharashtra 416410</span></div>
+          <div class="contact-row"><span class="ci">📞</span><span>+91 84592 43609</span></div>
+          <div class="contact-row"><span class="ci">✉️</span><span>kulkarnidiabetology@gmail.com</span></div>
+          <div class="contact-row"><span class="ci">🕐</span><span>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: Closed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Kulkarni Diabetes Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FOOTER DEVELOPER -->
+  <footer class="footer-dev">
+    <p>Designed &amp; Developed <span style="color:#e05555;">❤</span> by &nbsp;<span class="dev-name">Prajwal Shendge</span></p>
+    <div class="footer-dev-socials">
+      <a href="mailto:prajwalshendge22@gmail.com" aria-label="Gmail" class="dev-social-link" title="Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="22" height="22">
+          <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6z"/>
+          <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15z"/>
+          <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2z"/>
+          <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92z"/>
+          <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2C60.47 39.35 52 43.58 52 51z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/prajwal-shendge/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="dev-social-link" title="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+          <path fill="#fff" d="M7.2 9.6H4.8v8.4h2.4V9.6zM6 8.4c.8 0 1.4-.6 1.4-1.4S6.8 5.6 6 5.6 4.6 6.2 4.6 7s.6 1.4 1.4 1.4zM19.2 18h-2.4v-4.1c0-.9 0-2.1-1.3-2.1s-1.5 1-1.5 2v4.2h-2.4V9.6h2.3v1.1h.1c.3-.6 1.1-1.3 2.3-1.3 2.5 0 3 1.6 3 3.7V18z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/prajwalshendge22" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="dev-social-link" title="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="ig-svc" cx="30%" cy="107%" r="150%">
+              <stop offset="0%"   stop-color="#fdf497"/>
+              <stop offset="10%"  stop-color="#fdf497"/>
+              <stop offset="50%"  stop-color="#fd5949"/>
+              <stop offset="68%"  stop-color="#d6249f"/>
+              <stop offset="100%" stop-color="#285AEB"/>
+            </radialGradient>
+          </defs>
+          <rect width="24" height="24" rx="5.5" fill="url(#ig-svc)"/>
+          <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="3" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="16.6" cy="7.4" r="1" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+    /* ── Navbar scroll + hamburger ── */
+    const navbar       = document.getElementById('navbar');
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    let menuOpen = false;
+
+    hamburger.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      hamburger.classList.toggle('open', menuOpen);
+      mobileNav.classList.toggle('open', menuOpen);
+    });
+
+    function closeMobile() {
+      menuOpen = false;
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+
+    document.addEventListener('click', e => {
+      if (menuOpen && !navbar.contains(e.target) && !mobileNav.contains(e.target)) closeMobile();
+    });
+
+    /* ── Tab switching ── */
+    const tabs     = document.querySelectorAll('.stab');
+    const sections = document.querySelectorAll('.service-section');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const cat = tab.dataset.cat;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        sections.forEach(s => {
+          s.classList.remove('active');
+          if (s.id === 'cat-' + cat) s.classList.add('active');
+        });
+
+        document.getElementById('services-nav').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        /* Re-trigger reveal for newly shown cards */
+        setTimeout(() => {
+          document.querySelectorAll('#cat-' + cat + ' .reveal:not(.visible)').forEach(el => {
+            revealObs.observe(el);
+          });
+        }, 60);
+      });
+    });
+
+    /* ── Reveal on scroll ── */
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i % 4) * 0.1 + 's';
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach(r => revealObs.observe(r));
+
+    /* ── Scroll to top ── */
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
+</html>

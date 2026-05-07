@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Kulkarni Diabetology Centre</title>
+  <meta name="description" content="Contact Kulkarni Diabetology Centre. Book an appointment, find our location, or reach us by phone or email." />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" href="logo/Diabetes2.png" type="image/jpg" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="logo/Diabetes.png" alt="Kulkarni Diabetology Centre Logo" />
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"    onclick="closeMobile()">Home</a>
+    <a href="about.html"    onclick="closeMobile()">About Us</a>
+    <a href="services.html" onclick="closeMobile()">Services</a>
+    <a href="contact.html" class="nav-cta" onclick="closeMobile()">Contact Us</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="contact-hero">
+    <div class="hero-bg-cells" aria-hidden="true">
+      <div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+    <div class="contact-hero-content">
+      <div class="hero-badge"><span class="dot"></span>We're Here For You</div>
+      <h1 class="hero-title">
+        Get In Touch &amp;<br>
+        <span class="gradient-text">Book Your Visit</span>
+      </h1>
+      <p class="hero-subtitle">Have a question or ready to begin your diabetes care journey? Reach out — our team is happy to help you every step of the way.</p>
+      <div class="contact-quick-pills">
+        <a href="tel:+918459243609" class="quick-pill">
+          <span class="pill-icon">📞</span>
+          <span>+91 84592 43609</span>
+        </a>
+        <a href="mailto:kulkarnidiabetology@gmail.com" class="quick-pill">
+          <span class="pill-icon">✉️</span>
+          <span>kulkarnidiabetology@gmail.com</span>
+        </a>
+        <div class="quick-pill no-link">
+          <span class="pill-icon">🕐</span>
+          <span>Mon–Sat: 10AM–7PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <section class="contact-tabs-section">
+    <div class="tabs-wrapper">
+      <button class="tab-btn active" data-tab="appointment">
+        <span class="tab-icon">📅</span> Book Appointment
+      </button>
+      <button class="tab-btn" data-tab="enquiry">
+        <span class="tab-icon">💬</span> General Enquiry
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="contact-main">
+    <div class="contact-grid">
+
+      <!-- LEFT: Forms -->
+      <div class="contact-forms-col">
+
+        <!-- TAB 1: BOOK APPOINTMENT -->
+        <div class="tab-panel active" id="tab-appointment">
+          <div class="form-card">
+            <div class="form-card-header">
+              <div class="form-card-icon">📅</div>
+              <div>
+                <h2>Book an Appointment</h2>
+                <p>Fill in the details below and we'll confirm your slot within 2 hours.</p>
+              </div>
+            </div>
+
+            <div class="form-banner success" id="appt-success" style="display:none;">
+              <span>✅</span>
+              <div><strong>Appointment Requested!</strong> We'll call you within 2 hours to confirm your slot.</div>
+            </div>
+            <div class="form-banner error" id="appt-error" style="display:none;">
+              <span>❌</span>
+              <div id="appt-error-msg">Something went wrong. Please try again or call us directly.</div>
+            </div>
+
+            <form id="appointmentForm" class="contact-form" novalidate>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="appt-name">Full Name <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">👤</span>
+                    <input type="text" id="appt-name" name="name" placeholder="Ramesh Deshmukh" required autocomplete="name" />
+                  </div>
+                  <span class="field-error" id="err-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="appt-phone">Phone Number <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">📞</span>
+                    <input type="tel" id="appt-phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" />
+                  </div>
+                  <span class="field-error" id="err-phone"></span>
+                </div>
+              </div>
+
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="appt-email">Email Address</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" id="appt-email" name="email" placeholder="ramesh@email.com" autocomplete="email" />
+                  </div>
+                  <span class="field-error" id="err-email"></span>
+                </div>
+                <div class="form-group">
+                  <label for="appt-age">Age</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">🎂</span>
+                    <input type="number" id="appt-age" name="age" placeholder="45" min="1" max="120" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="appt-date">Preferred Date <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">📆</span>
+                    <input type="date" id="appt-date" name="preferred_date" required />
+                  </div>
+                  <span class="field-error" id="err-date"></span>
+                </div>
+                <div class="form-group">
+                  <label for="appt-time">Preferred Time <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">⏰</span>
+                    <select id="appt-time" name="preferred_time" required>
+                      <option value="">Select Time Slot</option>
+                      <optgroup label="Morning">
+                        <option value="10:00">10:00 AM</option>
+                        <option value="10:30">10:30 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="11:30">11:30 AM</option>
+                      </optgroup>
+                      <optgroup label="Afternoon">
+                        <option value="12:00">12:00 PM</option>
+                        <option value="12:30">12:30 PM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="14:30">02:30 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="15:30">03:30 PM</option>
+                      </optgroup>
+                      <optgroup label="Evening">
+                        <option value="16:00">04:00 PM</option>
+                        <option value="16:30">04:30 PM</option>
+                        <option value="17:00">05:00 PM</option>
+                        <option value="17:30">05:30 PM</option>
+                        <option value="18:00">06:00 PM</option>
+                        <option value="18:30">06:30 PM</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <span class="field-error" id="err-time"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="appt-service">Treatment / Service <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon">🩺</span>
+                  <select id="appt-service" name="service" required>
+                    <option value="">Select a Treatment</option>
+                    <optgroup label="Diabetes Management">
+                      <option value="Type 1 Diabetes">Type 1 Diabetes Management</option>
+                      <option value="Type 2 Diabetes">Type 2 Diabetes Management</option>
+                      <option value="Pre-Diabetes">Pre-Diabetes &amp; Prevention</option>
+                      <option value="Gestational Diabetes">Gestational Diabetes</option>
+                      <option value="Insulin Therapy">Insulin Therapy &amp; Optimisation</option>
+                      <option value="CGM Setup">CGM / CGMS Setup &amp; Monitoring</option>
+                      <option value="Insulin Pump">Insulin Pump Therapy</option>
+                    </optgroup>
+                    <optgroup label="Weight &amp; Metabolic">
+                      <option value="Obesity">Obesity &amp; Weight Management</option>
+                      <option value="Metabolic Syndrome">Metabolic Syndrome</option>
+                    </optgroup>
+                    <optgroup label="Endocrine &amp; Hormonal">
+                      <option value="Thyroid Care">Thyroid Disorders</option>
+                      <option value="PCOS">PCOS &amp; Hormonal Imbalance</option>
+                    </optgroup>
+                    <optgroup label="Complication Care">
+                      <option value="Diabetic Foot">Diabetic Foot Care</option>
+                      <option value="Diabetic Kidney">Kidney (Nephropathy) Screening</option>
+                      <option value="Diabetic Eye">Eye (Retinopathy) Screening</option>
+                      <option value="Diabetic Neuropathy">Neuropathy Management</option>
+                    </optgroup>
+                    <optgroup label="General">
+                      <option value="General Consultation">General Diabetes Consultation</option>
+                      <option value="Other">Other / Not Sure</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <span class="field-error" id="err-service"></span>
+              </div>
+
+              <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                  <label class="radio-label"><input type="radio" name="gender" value="Male" /> Male</label>
+                  <label class="radio-label"><input type="radio" name="gender" value="Female" /> Female</label>
+                  <label class="radio-label"><input type="radio" name="gender" value="Other" /> Other</label>
+                  <label class="radio-label"><input type="radio" name="gender" value="Prefer not to say" checked /> Prefer not to say</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="appt-message">Additional Notes / Concerns</label>
+                <div class="input-wrap textarea-wrap">
+                  <textarea id="appt-message" name="message" rows="4" placeholder="Describe your concern briefly, or mention your current medications / latest HbA1c…"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="appt-consent" name="consent" required />
+                  <span>I consent to Kulkarni Diabetology Centre contacting me regarding my appointment. <span class="req">*</span></span>
+                </label>
+                <span class="field-error" id="err-consent"></span>
+              </div>
+
+              <button type="submit" class="btn-primary form-submit" id="appt-submit">
+                <span class="btn-text">Confirm Appointment Request</span>
+                <span class="btn-loader" style="display:none;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="spin"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  Submitting…
+                </span>
+                <svg class="btn-arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- TAB 2: GENERAL ENQUIRY -->
+        <div class="tab-panel" id="tab-enquiry">
+          <div class="form-card">
+            <div class="form-card-header">
+              <div class="form-card-icon">💬</div>
+              <div>
+                <h2>Send Us a Message</h2>
+                <p>Have a question? Write to us and we'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+
+            <div class="form-banner success" id="enq-success" style="display:none;">
+              <span>✅</span>
+              <div><strong>Message Sent!</strong> Thank you for reaching out. We'll respond within 24 hours.</div>
+            </div>
+            <div class="form-banner error" id="enq-error" style="display:none;">
+              <span>❌</span>
+              <div id="enq-error-msg">Something went wrong. Please try again or call us directly.</div>
+            </div>
+
+            <form id="enquiryForm" class="contact-form" novalidate>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="enq-name">Full Name <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">👤</span>
+                    <input type="text" id="enq-name" name="name" placeholder="Your Name" required autocomplete="name" />
+                  </div>
+                  <span class="field-error" id="err-enq-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="enq-phone">Phone Number</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">📞</span>
+                    <input type="tel" id="enq-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="enq-email">Email Address <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon">✉️</span>
+                  <input type="email" id="enq-email" name="email" placeholder="you@email.com" required autocomplete="email" />
+                </div>
+                <span class="field-error" id="err-enq-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="enq-subject">Subject <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon">📋</span>
+                  <select id="enq-subject" name="subject" required>
+                    <option value="">Select Subject</option>
+                    <option value="Treatment Enquiry">Treatment Enquiry</option>
+                    <option value="Pricing Info">Pricing &amp; Packages</option>
+                    <option value="Insurance">Insurance / Cashless</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <span class="field-error" id="err-enq-subject"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="enq-message">Your Message <span class="req">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <textarea id="enq-message" name="message" rows="5" placeholder="Write your question or message here…" required></textarea>
+                </div>
+                <span class="field-error" id="err-enq-message"></span>
+              </div>
+
+              <button type="submit" class="btn-primary form-submit" id="enq-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loader" style="display:none;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="spin"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  Sending…
+                </span>
+                <svg class="btn-arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div><!-- /contact-forms-col -->
+
+      <!-- RIGHT: Info Cards + Map -->
+      <div class="contact-info-col">
+
+        <div class="info-cards">
+
+          <!-- Visit Us -->
+          <div class="info-card reveal">
+            <div class="info-card-icon" style="background:linear-gradient(135deg,rgba(0,229,160,.18),rgba(0,229,160,.06));">📍</div>
+            <div class="info-card-label-col">
+              <h4>Visit Us</h4>
+            </div>
+            <div class="info-card-divider"></div>
+            <div class="info-card-content-col">
+              <div class="info-card-main allow-wrap">
+                <p>Near Vantmure Corner, Miraj, Chatrapati. Shivaji Nagar,<br>Sangli Miraj Kupwad, Maharashtra 416410</p>
+                <a href="https://maps.google.com/?q=Kulkarni+Dermatology+Diabetology+Centre+Miraj" target="_blank" rel="noopener" class="info-link">Get Directions →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call Us -->
+          <div class="info-card reveal">
+            <div class="info-card-icon" style="background:linear-gradient(135deg,rgba(0,184,217,.18),rgba(0,184,217,.06));">📞</div>
+            <div class="info-card-label-col">
+              <h4>Call Us</h4>
+            </div>
+            <div class="info-card-divider"></div>
+            <div class="info-card-content-col">
+              <div class="info-card-main">
+                <p class="info-phone"><a href="tel:+918459243609">+91 84592 43609</a></p>
+                <p class="info-sub">Mon – Sat &nbsp;·&nbsp; 10:00 AM – 7:00 PM</p>
+                <a href="tel:+9184592 43609" class="info-link">Call Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Us -->
+          <div class="info-card reveal">
+            <div class="info-card-icon" style="background:linear-gradient(135deg,rgba(26,46,122,.12),rgba(26,46,122,.04));">✉️</div>
+            <div class="info-card-label-col">
+              <h4>Email Us</h4>
+            </div>
+            <div class="info-card-divider"></div>
+            <div class="info-card-content-col">
+              <div class="info-card-main">
+                <p><a href="mailto:kulkarnidiabetology@gmail.com" style="color:var(--teal);font-weight:500;">kulkarnidiabetology@gmail.com</a></p>
+                <p class="info-sub">We reply within 24 hours</p>
+                <a href="mailto:kulkarnidiabetology@gmail.com" class="info-link">Send Email →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clinic Hours -->
+          <div class="info-card reveal">
+            <div class="info-card-icon" style="background:linear-gradient(135deg,rgba(0,201,177,.18),rgba(0,201,177,.06));">🕐</div>
+            <div class="info-card-label-col">
+              <h4>Clinic<br>Hours</h4>
+            </div>
+            <div class="info-card-divider"></div>
+            <div class="info-card-content-col">
+              <div class="info-card-main">
+                <div class="hours-inline">
+                  <div class="hours-row">
+                    <span class="hours-day">Mon – Sat</span>
+                    <span class="hours-time">10:00 AM – 7:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span class="hours-day">Sunday</span>
+                    <span class="hours-closed">Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /info-cards -->
+
+        <!-- Map -->
+        <div class="map-container reveal">
+          <div class="map-header">
+            <h3>Find Us on Map</h3>
+            <a href="https://maps.google.com/?q=Kulkarni+Dermatology+Diabetology+Centre+Miraj+Maharashtra" target="_blank" rel="noopener" class="map-external-link">
+              Open in Google Maps ↗
+            </a>
+          </div>
+          <div class="map-embed-wrap">
+            <iframe
+              title="Kulkarni Diabetology Centre Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.9022729905973!2d74.6386542754618!3d16.831203583964186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1239b0e1a8b89%3A0x85dda31759fd6226!2sKulkarni%20Dermatology%20%26%20Diabetology%20Centre!5e0!3m2!1sen!2sin!4v1776488172264!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="map-address-pill">
+            <span>📍</span>
+            <span>Near Vantmure Corner, Miraj — Maharashtra 416410</span>
+          </div>
+        </div>
+
+      </div><!-- /contact-info-col -->
+    </div><!-- /contact-grid -->
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner-text">
+      <h2>Ready to Take Control of Your Diabetes?</h2>
+      <p>Book a consultation with Dr. Awani Paithankar Kulkarni today. Your journey to better metabolic health starts with a single step.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="tel:+918459243609 class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        Call Us Now
+      </a>
+      <a href="https://wa.me/918459243609" target="_blank" rel="noopener" class="btn-secondary btn-whatsapp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER HOSPITAL -->
+  <footer class="footer-hospital">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo/Diabetes.png" alt="Kulkarni Diabetology Center" />
+        <p>Providing compassionate, expert diabetological care to the people of Miraj and beyond. Your metabolic health is our mission.</p>
+        <div class="social-icons" style="margin-top:20px;">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="services.html">Type 1 &amp; Type 2 Diabetes</a></li>
+          <li><a href="services.html">Insulin Pump Therapy</a></li>
+          <li><a href="services.html">CGMS Monitoring</a></li>
+          <li><a href="services.html">Thyroid Care</a></li>
+          <li><a href="services.html">Gestational Diabetes</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="contact-row"><span class="ci">📍</span><span>Near Vantmure corner, Miraj,<br>Chatrapati. Shivaji Nagar, Sangli Miraj Kupwad, Maharashtra 416410</span></div>
+          <div class="contact-row"><span class="ci">📞</span><span>+91 84592 43609</span></div>
+          <div class="contact-row"><span class="ci">✉️</span><span>kulkarnidiabetology@gmail.com</span></div>
+          <div class="contact-row"><span class="ci">🕐</span><span>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: Closed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Kulkarni Diabetology Centre. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FOOTER DEVELOPER -->
+  <footer class="footer-dev">
+    <p>Designed &amp; Developed <span class="heart">❤</span> by &nbsp;<span class="dev-name">Prajwal Shendge</span></p>
+    <div class="footer-dev-socials">
+      <a href="mailto:prajwalshendge22@gmail.com" aria-label="Gmail" class="dev-social-link" title="Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="22" height="22">
+          <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6z"/>
+          <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15z"/>
+          <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2z"/>
+          <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92z"/>
+          <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2C60.47 39.35 52 43.58 52 51z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/prajwal-shendge/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="dev-social-link" title="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+          <path fill="#fff" d="M7.2 9.6H4.8v8.4h2.4V9.6zM6 8.4c.8 0 1.4-.6 1.4-1.4S6.8 5.6 6 5.6 4.6 6.2 4.6 7s.6 1.4 1.4 1.4zM19.2 18h-2.4v-4.1c0-.9 0-2.1-1.3-2.1s-1.5 1-1.5 2v4.2h-2.4V9.6h2.3v1.1h.1c.3-.6 1.1-1.3 2.3-1.3 2.5 0 3 1.6 3 3.7V18z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/prajwalshendge22" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="dev-social-link" title="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <defs>
+            <radialGradient id="ig-contact" cx="30%" cy="107%" r="150%">
+              <stop offset="0%"   stop-color="#fdf497"/>
+              <stop offset="10%"  stop-color="#fdf497"/>
+              <stop offset="50%"  stop-color="#fd5949"/>
+              <stop offset="68%"  stop-color="#d6249f"/>
+              <stop offset="100%" stop-color="#285AEB"/>
+            </radialGradient>
+          </defs>
+          <rect width="24" height="24" rx="5.5" fill="url(#ig-contact)"/>
+          <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="3" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="16.6" cy="7.4" r="1" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+  /* ── Navbar ── */
+  const navbar = document.getElementById('navbar');
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ── Hamburger ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  let menuOpen = false;
+  hamburger.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    hamburger.classList.toggle('open', menuOpen);
+    mobileNav.classList.toggle('open', menuOpen);
+  });
+  function closeMobile() {
+    menuOpen = false;
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+  }
+  document.addEventListener('click', e => {
+    if (menuOpen && !navbar.contains(e.target) && !mobileNav.contains(e.target)) closeMobile();
+  });
+
+  /* ── Reveal on scroll ── */
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transitionDelay = (i % 3) * 0.1 + 's';
+        entry.target.classList.add('visible');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(r => revealObs.observe(r));
+
+  /* ── Tabs ── */
+  const tabBtns   = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const panel = document.getElementById('tab-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  /* ── Min date: today ── */
+  const dateInput = document.getElementById('appt-date');
+  if (dateInput) {
+    const today = new Date();
+    const yyyy  = today.getFullYear();
+    const mm    = String(today.getMonth() + 1).padStart(2, '0');
+    const dd    = String(today.getDate()).padStart(2, '0');
+    dateInput.min = `${yyyy}-${mm}-${dd}`;
+  }
+
+  /* ── Validation helpers ── */
+  function showErr(id, msg) {
+    const el = document.getElementById(id);
+    if (el) { el.textContent = msg; el.style.display = 'block'; }
+  }
+  function clearErr(id) {
+    const el = document.getElementById(id);
+    if (el) { el.textContent = ''; el.style.display = 'none'; }
+  }
+  function isValidPhone(v) { return /^[6-9]\d{9}$/.test(v.replace(/[\s\-\+]/g, '')); }
+  function isValidEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  /* ── Appointment Form ── */
+  const apptForm = document.getElementById('appointmentForm');
+  apptForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    ['err-name','err-phone','err-email','err-date','err-time','err-service','err-consent'].forEach(clearErr);
+    document.getElementById('appt-success').style.display = 'none';
+    document.getElementById('appt-error').style.display   = 'none';
+
+    const name    = document.getElementById('appt-name').value.trim();
+    const phone   = document.getElementById('appt-phone').value.trim();
+    const email   = document.getElementById('appt-email').value.trim();
+    const date    = document.getElementById('appt-date').value;
+    const time    = document.getElementById('appt-time').value;
+    const service = document.getElementById('appt-service').value;
+    const consent = document.getElementById('appt-consent').checked;
+
+    let valid = true;
+    if (!name)                          { showErr('err-name',    'Please enter your full name.');            valid = false; }
+    if (!phone || !isValidPhone(phone)) { showErr('err-phone',   'Enter a valid 10-digit mobile number.');  valid = false; }
+    if (email && !isValidEmail(email))  { showErr('err-email',   'Enter a valid email address.');            valid = false; }
+    if (!date)                          { showErr('err-date',    'Please choose a preferred date.');         valid = false; }
+    if (!time)                          { showErr('err-time',    'Please select a time slot.');              valid = false; }
+    if (!service)                       { showErr('err-service', 'Please select a treatment / service.');   valid = false; }
+    if (!consent)                       { showErr('err-consent', 'Your consent is required to proceed.');   valid = false; }
+    if (!valid) return;
+
+    const submitBtn = document.getElementById('appt-submit');
+    submitBtn.querySelector('.btn-text').style.display   = 'none';
+    submitBtn.querySelector('.btn-loader').style.display = 'inline-flex';
+    submitBtn.querySelector('.btn-arrow').style.display  = 'none';
+    submitBtn.disabled = true;
+
+    const fd = new FormData(apptForm);
+    fd.append('form_type', 'appointment');
+
+    try {
+      const res  = await fetch('php/book_appointment.php', { method: 'POST', body: fd });
+      const data = await res.json();
+      if (data.success) {
+        document.getElementById('appt-success').style.display = 'flex';
+        apptForm.reset();
+        dateInput.min = new Date().toISOString().split('T')[0];
+        window.scrollTo({ top: document.getElementById('appt-success').getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+      } else {
+        document.getElementById('appt-error-msg').textContent = data.message || 'Something went wrong. Please try again.';
+        document.getElementById('appt-error').style.display   = 'flex';
+      }
+    } catch {
+      document.getElementById('appt-error-msg').textContent = 'Network error. Please call us directly at +91 95884 79640.';
+      document.getElementById('appt-error').style.display   = 'flex';
+    } finally {
+      submitBtn.querySelector('.btn-text').style.display   = 'inline';
+      submitBtn.querySelector('.btn-loader').style.display = 'none';
+      submitBtn.querySelector('.btn-arrow').style.display  = 'inline';
+      submitBtn.disabled = false;
+    }
+  });
+
+  /* ── Enquiry Form ── */
+  const enqForm = document.getElementById('enquiryForm');
+  enqForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    ['err-enq-name','err-enq-email','err-enq-subject','err-enq-message'].forEach(clearErr);
+    document.getElementById('enq-success').style.display = 'none';
+    document.getElementById('enq-error').style.display   = 'none';
+
+    const name    = document.getElementById('enq-name').value.trim();
+    const email   = document.getElementById('enq-email').value.trim();
+    const subject = document.getElementById('enq-subject').value;
+    const message = document.getElementById('enq-message').value.trim();
+
+    let valid = true;
+    if (!name)                          { showErr('err-enq-name',    'Please enter your name.');                      valid = false; }
+    if (!email || !isValidEmail(email)) { showErr('err-enq-email',   'Enter a valid email address.');                 valid = false; }
+    if (!subject)                       { showErr('err-enq-subject', 'Please select a subject.');                     valid = false; }
+    if (!message || message.length < 10){ showErr('err-enq-message', 'Please write a message (min 10 characters).'); valid = false; }
+    if (!valid) return;
+
+    const submitBtn = document.getElementById('enq-submit');
+    submitBtn.querySelector('.btn-text').style.display   = 'none';
+    submitBtn.querySelector('.btn-loader').style.display = 'inline-flex';
+    submitBtn.querySelector('.btn-arrow').style.display  = 'none';
+    submitBtn.disabled = true;
+
+    const fd = new FormData(enqForm);
+    fd.append('form_type', 'enquiry');
+
+    try {
+      const res  = await fetch('php/send_enquiry.php', { method: 'POST', body: fd });
+      const data = await res.json();
+      if (data.success) {
+        document.getElementById('enq-success').style.display = 'flex';
+        enqForm.reset();
+        window.scrollTo({ top: document.getElementById('enq-success').getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+      } else {
+        document.getElementById('enq-error-msg').textContent = data.message || 'Something went wrong. Please try again.';
+        document.getElementById('enq-error').style.display   = 'flex';
+      }
+    } catch {
+      document.getElementById('enq-error-msg').textContent = 'Network error. Please email us at kulkarnidiabetology@gmail.com';
+      document.getElementById('enq-error').style.display   = 'flex';
+    } finally {
+      submitBtn.querySelector('.btn-text').style.display   = 'inline';
+      submitBtn.querySelector('.btn-loader').style.display = 'none';
+      submitBtn.querySelector('.btn-arrow').style.display  = 'inline';
+      submitBtn.disabled = false;
+    }
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kulkarni Diabetology Centre — Managing Diabetes, Improving Lives</title>
+  <meta name="description" content="Kulkarni Diabetology Centre — Advanced diabetes, obesity, and metabolic disorder management in Miraj. Expert care by Dr. Awani Paithankar Kulkarni." />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="logo/Diabetes2.png" type="image/jpeg" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="logo/Diabetes.png" alt="Kulkarni Diabetology Centre Logo" />
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home"         onclick="closeMobile()">Home</a>
+    <a href="about.html"    onclick="closeMobile()">About Us</a>
+    <a href="services.html" onclick="closeMobile()">Services</a>
+    <a href="contact.html" class="nav-cta" onclick="closeMobile()">Contact Us</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-cells" aria-hidden="true">
+      <div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+
+    <!-- Left -->
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span>Miraj's Trusted Diabetology Centre</div>
+      <h1 class="hero-title">
+        Your Health Deserves<br>
+        <span class="gradient-text">Expert Diabetes</span><br>
+        Management
+      </h1>
+      <p class="hero-subtitle">At Kulkarni Diabetology Centre, we blend advanced clinical science with personalised treatment plans — helping you control diabetes, manage obesity, and live a fuller, healthier life.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Book Appointment<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="services.html" class="btn-secondary"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Explore Services</a>
+      </div>
+    </div>
+
+    <!-- Right: Visual area -->
+    <div class="hero-visual">
+      <div class="hero-orb" aria-hidden="true"></div>
+
+      <!-- Main Health Card -->
+      <div class="skin-card">
+        <div class="skin-card-header">
+          <div class="skin-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="skin-card-header-text">
+            <h3>Metabolic Health Profile</h3>
+            <p>Personalised Assessment</p>
+          </div>
+        </div>
+        <div class="skin-bars">
+          <div class="skin-bar-row">
+            <div class="skin-bar-label"><span>Blood Sugar Control</span><span>94%</span></div>
+            <div class="skin-bar-track"><div class="skin-bar-fill" data-width="94"></div></div>
+          </div>
+          <div class="skin-bar-row">
+            <div class="skin-bar-label"><span>HbA1c Management</span><span>89%</span></div>
+            <div class="skin-bar-track"><div class="skin-bar-fill" data-width="89"></div></div>
+          </div>
+          <div class="skin-bar-row">
+            <div class="skin-bar-label"><span>Insulin Sensitivity</span><span>92%</span></div>
+            <div class="skin-bar-track"><div class="skin-bar-fill" data-width="92"></div></div>
+          </div>
+          <div class="skin-bar-row">
+            <div class="skin-bar-label"><span>Complication Prevention</span><span>96%</span></div>
+            <div class="skin-bar-track"><div class="skin-bar-fill" data-width="96"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Services marquee">
+    <div class="ticker-inner">
+      <div class="ticker-item"><span class="dot"></span> Type 1 Diabetes Care</div>
+      <div class="ticker-item"><span class="dot"></span> Type 2 Diabetes Management</div>
+      <div class="ticker-item"><span class="dot"></span> Insulin Pump Therapy</div>
+      <div class="ticker-item"><span class="dot"></span> Thyroid Disorders</div>
+      <div class="ticker-item"><span class="dot"></span> Obesity &amp; Weight Management</div>
+      <div class="ticker-item"><span class="dot"></span> Gestational Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> CGMS Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Continuous Glucose Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Foot Care</div>
+      <div class="ticker-item"><span class="dot"></span> HbA1c Optimisation</div>
+      <div class="ticker-item"><span class="dot"></span> Type 1 Diabetes Care</div>
+      <div class="ticker-item"><span class="dot"></span> Type 2 Diabetes Management</div>
+      <div class="ticker-item"><span class="dot"></span> Insulin Pump Therapy</div>
+      <div class="ticker-item"><span class="dot"></span> Thyroid Disorders</div>
+      <div class="ticker-item"><span class="dot"></span> Obesity &amp; Weight Management</div>
+      <div class="ticker-item"><span class="dot"></span> Gestational Diabetes</div>
+      <div class="ticker-item"><span class="dot"></span> CGMS Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Continuous Glucose Monitoring</div>
+      <div class="ticker-item"><span class="dot"></span> Diabetic Foot Care</div>
+      <div class="ticker-item"><span class="dot"></span> HbA1c Optimisation</div>
+    </div>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-preview" id="services">
+    <div class="reveal">
+      <div class="section-tag">Our Specialisations</div>
+      <h2 class="section-title">Advanced Treatments<br>Tailored For You</h2>
+      <p class="section-subtitle">From Type 1 to Type 2 diabetes, obesity, thyroid care and beyond — a comprehensive range of diabetological services powered by the latest medical technology.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1: Advanced Diagnostics -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/Advanced Diagnostics.png" alt="Advanced Diagnostics" class="service-card-img" />
+          <span class="service-card-badge">DIAGNOSTICS</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Diagnostics</div>
+          <h3>Advanced Diagnostics</h3>
+          <p>State-of-the-art HbA1c, CGM, and metabolic panel testing for accurate, early diagnosis of all diabetic and endocrine conditions.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Insulin & Pump Therapy -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/Insulin.png" alt="Insulin & Pump Therapy" class="service-card-img" />
+          <span class="service-card-badge">INSULIN THERAPY</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Insulin &amp; Pump</div>
+          <h3>Insulin &amp; Pump Therapy</h3>
+          <p>Personalised insulin regimens including basal-bolus therapy, insulin pump initiation and management, and dose optimisation for tight glycaemic control.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+      <!-- Card 3: CGMS & Digital Monitoring -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/CGMS.png" alt="CGMS & Digital Monitoring" class="service-card-img" />
+          <span class="service-card-badge">CGMS</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Digital Monitoring</div>
+          <h3>CGMS &amp; Digital Monitoring</h3>
+          <p>Short and long-term continuous glucose monitoring setup, data interpretation, time-in-range optimisation, and personalised therapy adjustments.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+      <!-- Card 4: Nutrition & Lifestyle Medicine -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/Nutrition.png" alt="Nutrition & Lifestyle Medicine" class="service-card-img" />
+          <span class="service-card-badge">NUTRITION</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Lifestyle Medicine</div>
+          <h3>Nutrition &amp; Lifestyle Medicine</h3>
+          <p>Culturally adaptable meal plans, carb counting, glycaemic index education, activity coaching, and sustainable lifestyle strategies tailored to your routine.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+      <!-- Card 5: Complication Prevention -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/Care.png" alt="Complication Prevention" class="service-card-img" />
+          <span class="service-card-badge">PREVENTION</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Complication Care</div>
+          <h3>Complication Prevention</h3>
+          <p>Proactive screening and management of diabetic nephropathy, retinopathy, neuropathy, foot care, and cardiovascular risk factors.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+      <!-- Card 6: Obesity & Metabolic Health -->
+      <div class="service-card reveal" onclick="window.location.href='services.html'">
+        <div class="service-card-img-wrap">
+          <img src="img/Metabolic.png" alt="Obesity & Metabolic Health" class="service-card-img" />
+          <span class="service-card-badge">METABOLIC HEALTH</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-tag">Obesity &amp; Metabolic</div>
+          <h3>Obesity &amp; Metabolic Health</h3>
+          <p>Medical weight management including nutrition planning, activity prescriptions, behaviour change support, and anti-obesity pharmacotherapy when indicated.</p>
+          <div class="service-link">Learn More →</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <div class="why-visual reveal">
+      <div class="why-bg-shape"></div>
+      <div class="why-grid">
+
+        <!-- Card 1: Science-Backed -->
+        <div class="why-item">
+          <div class="why-item-img-wrap">
+            <img src="img/Science.png" alt="Science-Backed" class="why-item-img" />
+          </div>
+          <h4>Science-Backed</h4>
+          <p>Every plan rooted in the latest clinical guidelines and peer-reviewed research.</p>
+        </div>
+
+        <!-- Card 2: Latest Technology -->
+        <div class="why-item">
+          <div class="why-item-img-wrap">
+            <img src="img/Technology.png" alt="Latest Technology" class="why-item-img" />
+          </div>
+          <h4>Latest Technology</h4>
+          <p>Cutting-edge CGM, insulin pump management, and ABPM technology.</p>
+        </div>
+
+        <!-- Card 3: Fellowship Trained -->
+        <div class="why-item">
+          <div class="why-item-img-wrap">
+            <img src="img/Fellowship.png" alt="Fellowship Trained" class="why-item-img" />
+          </div>
+          <h4>Fellowship Trained</h4>
+          <p>MUHS Fellowship in Diabetology under Dr. Uday Phadke, Sahyadri Hospital.</p>
+        </div>
+
+        <!-- Card 4: Patient First -->
+        <div class="why-item">
+          <div class="why-item-img-wrap">
+            <img src="img/Patient.png" alt="Patient First" class="why-item-img" />
+          </div>
+          <h4>Patient First</h4>
+          <p>Compassionate, personalised, ethics-first care at every step.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="why-content reveal">
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-title">Where Science Meets<br>Metabolic Wellness</h2>
+      <p class="section-subtitle">We combine the precision of modern diabetology with compassionate patient education — delivering life-changing results you can measure and feel.</p>
+      <div class="feature-list">
+        <div class="feature-row">
+          <div class="feature-check">✓</div>
+          <div><h5>Personalised Treatment Plans</h5><p>Every patient receives a custom diabetes management protocol based on their unique metabolic profile, lifestyle, dietary habits, and personal goals.</p></div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-check">✓</div>
+          <div><h5>Evidence-Based Protocols</h5><p>All treatment approaches follow the latest ADA, IDF, and RSSDI guidelines — never fleeting health fads or commercial interests.</p></div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-check">✓</div>
+          <div><h5>A Focus on Lifestyle Integration</h5><p>Our consultations go beyond prescriptions to create sustainable lifestyle strategies — meaningful dietary changes and activity plans that truly fit your life.</p></div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-check">✓</div>
+          <div><h5>Ongoing Support &amp; Education</h5><p>Written care plans, one-on-one education sessions, and full support throughout your entire diabetes and metabolic health journey.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS CAROUSEL -->
+  <section class="conditions">
+    <div class="conditions-header reveal">
+      <div>
+        <div class="section-tag">Conditions We Treat</div>
+        <h2 class="section-title">Comprehensive Metabolic Care<br>For Every Concern</h2>
+        <p class="section-subtitle">Expert treatment for a wide range of diabetes, obesity, and metabolic conditions under one roof.</p>
+      </div>
+      <div class="scroll-arrows">
+        <button class="scroll-btn" id="scrollLeft" aria-label="Scroll left">&#8592;</button>
+        <button class="scroll-btn" id="scrollRight" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </div>
+    <div class="conditions-scroll" id="conditionsScroll">
+      <div class="condition-card"><div class="condition-emoji">🩸</div><h3>Type 1 Diabetes</h3><p>Child and family-centred care with insulin planning, CGM, pump support, and hypoglycaemia prevention.</p></div>
+      <div class="condition-card"><div class="condition-emoji">📊</div><h3>Type 2 Diabetes</h3><p>Diagnosis, medication optimisation, weight management, and sustainable diet-activity plans with regular follow-up.</p></div>
+      <div class="condition-card"><div class="condition-emoji">⚡</div><h3>Prediabetes</h3><p>Early intervention with weight control, diet, activity, sleep, and stress management to delay or prevent diabetes.</p></div>
+      <div class="condition-card"><div class="condition-emoji">🤰</div><h3>Gestational Diabetes</h3><p>Trimester-specific care in collaboration with obstetricians, with postpartum reassessment to reduce future risk.</p></div>
+      <div class="condition-card"><div class="condition-emoji">🦋</div><h3>Thyroid Disorders</h3><p>Hypothyroidism, hyperthyroidism, thyroid nodules, and pregnancy-related thyroid issues — evaluation and management.</p></div>
+      <div class="condition-card"><div class="condition-emoji">⚖️</div><h3>Obesity &amp; Metabolic Syndrome</h3><p>Medical weight management combining nutrition, activity, behaviour change, and pharmacotherapy when indicated.</p></div>
+      <div class="condition-card"><div class="condition-emoji">🦶</div><h3>Diabetic Foot</h3><p>Foot risk assessment, monofilament testing, pain management, and preventive foot-care education.</p></div>
+      <div class="condition-card"><div class="condition-emoji">🫘</div><h3>Diabetic Nephropathy</h3><p>Urine albumin screening, eGFR monitoring, and renal-protective therapy to slow kidney disease progression.</p></div>
+      <div class="condition-card"><div class="condition-emoji">👁️</div><h3>Diabetic Retinopathy</h3><p>Regular screening coordination and optimised glycaemic control to protect your vision from diabetic eye complications.</p></div>
+      <div class="condition-card"><div class="condition-emoji">🫀</div><h3>Diabetic Heart Risk</h3><p>Lipid management, ABPM, and cardiometabolically protective therapy for integrated cardiovascular risk reduction.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner-text">
+      <h2>Ready to Take Control of Your Diabetes?</h2>
+      <p>Book a consultation with Dr. Awani Paithankar Kulkarni today. Your journey to better metabolic health starts with a single step.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="contact.html" class="btn-primary">Book Appointment<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="tel:+919588479640" class="btn-secondary"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call Us Now</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-tag" style="display:inline-block;">Patient Stories</div>
+      <h2 class="section-title" style="margin-top:8px;">What Our Patients Say</h2>
+      <p class="section-subtitle" style="margin:0 auto;max-width:520px;">Real results, real people. Verified Google reviews from our patients sharing their journey to better diabetes and metabolic health.</p>
+      <!-- Google Rating Summary -->
+      <div class="rating-summary reveal">
+        <div class="rating-score">4.9</div>
+        <div class="rating-details">
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-count">Based on Google Reviews</div>
+          <a href="https://www.google.com/maps/search/Kulkarni+Diabetology+Centre+Miraj" target="_blank" rel="noopener noreferrer" class="rating-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            View on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Carousel Wrapper -->
+    <div class="testimonials-carousel-wrapper">
+      <button class="t-scroll-btn t-scroll-left" id="tScrollLeft" aria-label="Scroll left">&#8592;</button>
+      <div class="testimonials-scroll" id="testimonialsScroll">
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>I have been getting regular advice on treatment by Dr. Awani Paithankar. I am able to manage and control my diabetes and hypertension. She has well-researched and updated knowledge. I can completely rely on her. Many congratulations to Dr. Awani for her continuous patient care!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VJ</div>
+            <div class="author-info"><strong>Vasundhara Jahagirdar</strong><span>Diabetes &amp; Hypertension Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>I have been taking insulin for the past 2 years. Since following the diet and medicines prescribed by Madam, my insulin has stopped. An incredible transformation in my health!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RT</div>
+            <div class="author-info"><strong>Ramesh Toro</strong><span>Type 2 Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review · Local Guide
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>I had a 7-year thyroid condition. Today my thyroid level is completely normal. Dr. Awani Kulkarni listened carefully, answered all my questions, and made me feel at ease throughout my visit. I've never felt more comfortable discussing my health concerns. Highly recommend!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SV</div>
+            <div class="author-info"><strong>Sneha Vibhute</strong><span>Thyroid Patient · Local Guide</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>My wife is currently receiving treatment for a thyroid condition from Dr. Awani, and we couldn't be more satisfied. She takes the time to explain the complexities of the disease in a way that is easy to understand, which has been incredibly reassuring. Highly recommended.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info"><strong>Sanket Kalyankar</strong><span>Thyroid Patient (Family)</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review · Local Guide
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Really surprised to see the radical control over my sugar. The sugar level has been steady over the last two months and I feel a significant improvement in my general health. Thanks to Dr. Awani and the team!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PV</div>
+            <div class="author-info"><strong>Pramod Vyas</strong><span>Diabetes Patient · Local Guide</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>My sugar was 390 and within just one month it came down to 220. And now it has reached completely normal levels of 177 and 170. Madam's hard work and guidance has truly brought my sugar back to normal. Thank you so much!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SB</div>
+            <div class="author-info"><strong>Suresh Bijwani</strong><span>Type 2 Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Thanks Madam for the wonderful treatment of uncontrolled sugar. Super effective results — I'm truly grateful for the care and the outstanding improvement in my sugar levels.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RM</div>
+            <div class="author-info"><strong>Raosaheb Munje</strong><span>Uncontrolled Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Result of my sugar level is very good. My sugar level is now completely normal thanks to proper medication, diet, and exercise guidelines provided by Dr. Awani. Excellent doctor!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PN</div>
+            <div class="author-info"><strong>P K Neharkar</strong><span>Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>We received guidance and medication on how to control sugar. When I came for my second visit, my sugar level had reduced considerably. Madam is guiding patients in a very good and caring way.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SS</div>
+            <div class="author-info"><strong>Shivaji Shinde</strong><span>Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>My sugar was above 400. I met Dr. Awani and the treatment has been excellent. I am now satisfied and feeling much better. Truly a happy patient with great results!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SC</div>
+            <div class="author-info"><strong>Sambhaji Chavan</strong><span>High Sugar Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Excellent care and support provided by Madam. The attention given to every patient is exceptional and the results speak for themselves. Highly recommended to anyone struggling with diabetes or metabolic issues.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div class="author-info"><strong>Mayuri Lonkar</strong><span>Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>We were very pleased with the examination. We really appreciated that Dr. Awani personally takes the time to examine each patient with full attention. This level of personal care is rare and truly appreciated.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info"><strong>Deepak Khurape</strong><span>Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>The treatment is very good. The way of explaining to the patient is excellent — I always leave the clinic feeling informed and confident. Got great results. Thank you Dr. Awani!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info"><strong>Sujata Kulkarni</strong><span>Diabetes Patient</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="google-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Review
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Doctor is very soft-spoken and sincere about her work. She genuinely cares about every patient. I am fully satisfied with the treatment and the level of dedication shown in each consultation.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KG</div>
+            <div class="author-info"><strong>Kishor Gore</strong><span>Patient</span></div>
+          </div>
+        </div>
+
+      </div><!-- end testimonials-scroll -->
+      <button class="t-scroll-btn t-scroll-right" id="tScrollRight" aria-label="Scroll right">&#8594;</button>
+    </div><!-- end testimonials-carousel-wrapper -->
+
+    <!-- Dots indicator -->
+    <div class="t-dots" id="tDots" aria-label="Testimonial navigation"></div>
+
+  </section>
+
+  <!-- FOOTER HOSPITAL -->
+  <footer class="footer-hospital">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo/Diabetes.png" alt="Kulkarni Diabetology Centre" />
+        <p>Providing compassionate, expert diabetological care to the people of Miraj and beyond. Your metabolic health is our mission.</p>
+        <div class="social-icons" style="margin-top:20px;">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="services.html">Type 1 &amp; Type 2 Diabetes</a></li>
+          <li><a href="services.html">Insulin Pump Therapy</a></li>
+          <li><a href="services.html">CGMS Monitoring</a></li>
+          <li><a href="services.html">Thyroid Care</a></li>
+          <li><a href="services.html">Gestational Diabetes</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="contact-row"><span class="ci">📍</span><span>Near Vantmure corner, Miraj,<br>Chatrapati. Shivaji Nagar, Sangli Miraj Kupwad, Maharashtra 416410</span></div>
+          <div class="contact-row"><span class="ci">📞</span><span>+91 84592 43609</span></div>
+          <div class="contact-row"><span class="ci">✉️</span><span>kulkarnidiabetology@gmail.com</span></div>
+          <div class="contact-row"><span class="ci">🕐</span><span>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: Closed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Kulkarni Diabetology Centre. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FOOTER DEVELOPER -->
+  <footer class="footer-dev">
+    <p>Designed &amp; Developed <span class="heart">❤</span> by &nbsp;<span class="dev-name">Prajwal Shendge</span></p>
+    <div class="footer-dev-socials">
+      <a href="mailto:prajwalshendge22@gmail.com" aria-label="Gmail" class="dev-social-link" title="Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="22" height="22">
+          <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6z"/>
+          <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15z"/>
+          <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2z"/>
+          <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92z"/>
+          <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2C60.47 39.35 52 43.58 52 51z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/prajwal-shendge/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="dev-social-link" title="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+          <path fill="#fff" d="M7.2 9.6H4.8v8.4h2.4V9.6zM6 8.4c.8 0 1.4-.6 1.4-1.4S6.8 5.6 6 5.6 4.6 6.2 4.6 7s.6 1.4 1.4 1.4zM19.2 18h-2.4v-4.1c0-.9 0-2.1-1.3-2.1s-1.5 1-1.5 2v4.2h-2.4V9.6h2.3v1.1h.1c.3-.6 1.1-1.3 2.3-1.3 2.5 0 3 1.6 3 3.7V18z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/prajwalshendge22" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="dev-social-link" title="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="ig-grad" cx="30%" cy="107%" r="150%">
+              <stop offset="0%"   stop-color="#fdf497"/>
+              <stop offset="10%"  stop-color="#fdf497"/>
+              <stop offset="50%"  stop-color="#fd5949"/>
+              <stop offset="68%"  stop-color="#d6249f"/>
+              <stop offset="100%" stop-color="#285AEB"/>
+            </radialGradient>
+          </defs>
+          <rect width="24" height="24" rx="5.5" fill="url(#ig-grad)"/>
+          <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="3" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="16.6" cy="7.4" r="1" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    /* ── Mobile menu ── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    let menuOpen = false;
+    hamburger.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      hamburger.classList.toggle('open', menuOpen);
+      mobileNav.classList.toggle('open', menuOpen);
+    });
+    function closeMobile() {
+      menuOpen = false;
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    document.addEventListener('click', e => {
+      if (menuOpen && !navbar.contains(e.target) && !mobileNav.contains(e.target)) closeMobile();
+    });
+
+    /* ── Reveal on scroll ── */
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i % 3) * 0.12 + 's';
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(r => revealObs.observe(r));
+
+    /* ── Progress bars ── */
+    function animateBars() {
+      document.querySelectorAll('.skin-bar-fill').forEach(b => b.style.width = b.dataset.width + '%');
+    }
+    const skinCard = document.querySelector('.skin-card');
+    if (skinCard) {
+      new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) animateBars();
+      }, { threshold: 0.3 }).observe(skinCard);
+      window.addEventListener('load', () => {
+        if (skinCard.getBoundingClientRect().top < window.innerHeight) setTimeout(animateBars, 600);
+      });
+    }
+
+    /* ── Conditions carousel ── */
+    const condScroll = document.getElementById('conditionsScroll');
+    document.getElementById('scrollLeft')?.addEventListener('click', () => condScroll.scrollBy({ left: -280, behavior: 'smooth' }));
+    document.getElementById('scrollRight')?.addEventListener('click', () => condScroll.scrollBy({ left: 280, behavior: 'smooth' }));
+    let isDown = false, startX, sl2;
+    condScroll.addEventListener('mousedown', e => { isDown = true; condScroll.style.cursor = 'grabbing'; startX = e.pageX - condScroll.offsetLeft; sl2 = condScroll.scrollLeft; });
+    condScroll.addEventListener('mouseleave', () => { isDown = false; condScroll.style.cursor = ''; });
+    condScroll.addEventListener('mouseup', () => { isDown = false; condScroll.style.cursor = ''; });
+    condScroll.addEventListener('mousemove', e => { if (!isDown) return; e.preventDefault(); condScroll.scrollLeft = sl2 - (e.pageX - condScroll.offsetLeft - startX) * 1.2; });
+    let tSX = 0;
+    condScroll.addEventListener('touchstart', e => { tSX = e.touches[0].clientX; }, { passive: true });
+    condScroll.addEventListener('touchmove', e => { condScroll.scrollLeft += (tSX - e.touches[0].clientX) * 0.5; }, { passive: true });
+
+    /* ── Testimonials carousel ── */
+    const tScroll = document.getElementById('testimonialsScroll');
+    const tDotsContainer = document.getElementById('tDots');
+    const tCards = tScroll ? tScroll.querySelectorAll('.testimonial-card') : [];
+    const CARDS_PER_VIEW = () => window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+    const totalDots = () => Math.ceil(tCards.length / CARDS_PER_VIEW());
+
+    function buildDots() {
+      tDotsContainer.innerHTML = '';
+      const n = totalDots();
+      for (let i = 0; i < n; i++) {
+        const d = document.createElement('button');
+        d.className = 'tDot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to page ' + (i + 1));
+        d.addEventListener('click', () => scrollToPage(i));
+        tDotsContainer.appendChild(d);
+      }
+    }
+
+    function scrollToPage(page) {
+      if (!tScroll) return;
+      const cardWidth = tScroll.querySelector('.testimonial-card')?.offsetWidth + 24 || 340;
+      tScroll.scrollTo({ left: page * CARDS_PER_VIEW() * cardWidth, behavior: 'smooth' });
+    }
+
+    function updateActiveDot() {
+      if (!tScroll) return;
+      const cardWidth = tScroll.querySelector('.testimonial-card')?.offsetWidth + 24 || 340;
+      const page = Math.round(tScroll.scrollLeft / (CARDS_PER_VIEW() * cardWidth));
+      tDotsContainer.querySelectorAll('.tDot').forEach((d, i) => d.classList.toggle('active', i === page));
+    }
+
+    if (tScroll) {
+      buildDots();
+      tScroll.addEventListener('scroll', updateActiveDot, { passive: true });
+      window.addEventListener('resize', buildDots);
+
+      document.getElementById('tScrollLeft')?.addEventListener('click', () => tScroll.scrollBy({ left: -(tScroll.querySelector('.testimonial-card')?.offsetWidth + 24 || 340), behavior: 'smooth' }));
+      document.getElementById('tScrollRight')?.addEventListener('click', () => tScroll.scrollBy({ left: (tScroll.querySelector('.testimonial-card')?.offsetWidth + 24 || 340), behavior: 'smooth' }));
+
+      let tDown = false, tStartX, tSL;
+      tScroll.addEventListener('mousedown', e => { tDown = true; tScroll.style.cursor = 'grabbing'; tStartX = e.pageX - tScroll.offsetLeft; tSL = tScroll.scrollLeft; });
+      tScroll.addEventListener('mouseleave', () => { tDown = false; tScroll.style.cursor = ''; });
+      tScroll.addEventListener('mouseup', () => { tDown = false; tScroll.style.cursor = ''; });
+      tScroll.addEventListener('mousemove', e => { if (!tDown) return; e.preventDefault(); tScroll.scrollLeft = tSL - (e.pageX - tScroll.offsetLeft - tStartX) * 1.2; });
+      let tTouchX = 0;
+      tScroll.addEventListener('touchstart', e => { tTouchX = e.touches[0].clientX; }, { passive: true });
+      tScroll.addEventListener('touchmove', e => { tScroll.scrollLeft += (tTouchX - e.touches[0].clientX) * 0.5; tTouchX = e.touches[0].clientX; }, { passive: true });
+    }
+
+    /* ── Scroll to top ── */
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
